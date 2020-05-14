@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+$color-text: $gray;
+
+.shared-copyrights {
+  color: $color-text;
+  text-align: center;
+  margin-top: 1rem;
+
+  a {
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &-line {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

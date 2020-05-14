@@ -1,0 +1,23 @@
+.shared-logo {
+  display: grid;
+  grid-gap: 0.5em;
+  margin-bottom: 2em;
+  justify-items: center;
+
+  img {
+    width: 5em;
+    height: 5em;
+  }
+
+  span {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: Dosis, sans-serif;
+
+    b {
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../variables';
+
+$color-background: $white;
+
+.todo-list {
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background-color: $color-background;
+
+  &-viewport {
+    max-height: 50vh;
+    overflow-x: hidden;
+  }
+}

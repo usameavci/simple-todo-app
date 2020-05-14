@@ -1,0 +1,82 @@
+@import '../../variables';
+
+$color-item-border: $color-border;
+$color-toggle-border: $color-border;
+$color-title--done: #CDCED2;
+$color-toggle-border--done: #5DDDA5;
+$color-remove: $color-border--negative;
+$color-remove-hover: $white;
+$color-remove-border: $color-border--negative;
+$color-remove-background: $color-background--negative;
+
+.todo-item {
+  display: grid;
+  grid-gap: 1em;
+  padding: 1.1em;
+  align-items: center;
+  grid-template-columns: 32px 1fr auto;
+  border-bottom: 1px solid $color-item-border;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &-title {
+    font-size: 1.25em;
+  }
+
+  &-toggle {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid $color-toggle-border;
+  }
+
+  &-remove {
+    font-size: 0.75em;
+    color: $color-remove;
+    padding: 0.25em 0.5em;
+    border-color: $color-remove-border;
+    &:hover {
+      color: $color-remove-hover;
+      background-color: $color-remove-background;
+    }
+  }
+
+  &--done {
+    .todo-item {
+      &-title {
+        color: $color-title--done;
+      }
+
+      &-toggle {
+        border-color: $color-toggle-border--done;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 16px;
+          height: 3px;
+          display: block;
+          position: absolute;
+          border-radius: $border-radius;
+          background-color: $color-toggle-border--done;
+        }
+
+        &::before {
+          top: 12px;
+          left: 4px;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          top: 12px;
+          left: 6px;
+          transform: rotate(125deg);
+        }
+      }
+    }
+  }
+}

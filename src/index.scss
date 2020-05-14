@@ -1,0 +1,21 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-body-background;
+  font-family: 'Droid Sans', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  outline: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  box-sizing: border-box;
+}

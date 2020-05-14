@@ -1,0 +1,17 @@
+@import '../../../variables';
+
+$color-border: $color-button-border;
+$color-background: $color-button-background;
+$color-background-hover: $color-button-background-hover;
+
+.shared-button {
+  cursor: pointer;
+  padding: 1em 1.5em;
+  border-radius: $border-radius;
+  border: 1px solid $color-border;
+  background-color: $color-background;
+
+  &:hover {
+    background-color: $color-background-hover;
+  }
+}

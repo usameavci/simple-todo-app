@@ -1,0 +1,11 @@
+@import '../../../variables';
+
+$color-border: $color-input-border;
+$color-background: $color-input-background;
+
+.shared-input {
+  padding: 1em 1.5em;
+  border-radius: $border-radius;
+  border: 1px solid $color-border;
+  background-color: $color-background;
+}

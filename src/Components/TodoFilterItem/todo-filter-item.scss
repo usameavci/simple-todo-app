@@ -1,0 +1,17 @@
+@import '../../variables';
+
+.todo-filter-item {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  border-radius: $border-radius;
+  border: 1px solid $color-border;
+  background-color: $color-background;
+
+  &:hover {
+    background-color: $color-background-hover;
+  }
+
+  + .todo-filter-item {
+    margin-left: 0.5em;
+  }
+}
